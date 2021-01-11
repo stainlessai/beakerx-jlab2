@@ -8,7 +8,13 @@ This short guide outlines the procedure for creating a local environment that su
 
 The code for this environment comes from multiple repositories and also a fork of table_display that will probably (at some point) be merged into master but this setup seems to work for now.
 
-NOTE: If you are NOT building from scratch (i.e., you've initialized the submodules in this repo) you can skip to step #2
+## 0. Clone with submodules
+
+Clone the repo with submodules (OR skip to Step #1 below)
+
+```
+git clone --recurse-submodules https://github.com/stainlessai/beakerx-jlab2
+```
 
 ## 1. Checkout the required repositories
 This guide assumes you are in some local directory `$BEAKERX_HOME` and you're using Conda at `$CONDA_HOME`
