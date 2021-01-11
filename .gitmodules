@@ -1,21 +1,21 @@
 [submodule "beakerx_base"]
 	path = beakerx_base
-	url = ./beakerx_base
+	url = https://github.com/twosigma/beakerx_base.git/ 
 [submodule "beakerx_kernel_base"]
 	path = beakerx_kernel_base
-	url = ./beakerx_kernel_base/
+	url = https://github.com/twosigma/beakerx_kernel_base.git/
 [submodule "beakerx_kernel_groovy"]
 	path = beakerx_kernel_groovy
-	url = ./beakerx_kernel_groovy/
+	url = https://github.com/twosigma/beakerx_kernel_groovy.git/
 [submodule "beakerx_tabledisplay"]
 	path = beakerx_tabledisplay
-	url = ./beakerx_tabledisplay/
+	url = https://github.com/martinRenou/beakerx_tabledisplay.git/ 
 [submodule "beakerx_tests"]
 	path = beakerx_tests
-	url = ./beakerx_tests/
+	url = https://github.com/twosigma/beakerx_tests.git/
 [submodule "beakerx_widgets"]
 	path = beakerx_widgets
-	url = ./beakerx_widgets/
+	url = https://github.com/twosigma/beakerx_widgets.git/
 [submodule "beakerx"]
 	path = beakerx
-	url = ./beakerx
+	url = https://github.com/twosigma/beakerx/git/
