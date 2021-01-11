@@ -1,0 +1,21 @@
+[submodule "beakerx_base"]
+	path = beakerx_base
+	url = ./beakerx_base
+[submodule "beakerx_kernel_base"]
+	path = beakerx_kernel_base
+	url = ./beakerx_kernel_base/
+[submodule "beakerx_kernel_groovy"]
+	path = beakerx_kernel_groovy
+	url = ./beakerx_kernel_groovy/
+[submodule "beakerx_tabledisplay"]
+	path = beakerx_tabledisplay
+	url = ./beakerx_tabledisplay/
+[submodule "beakerx_tests"]
+	path = beakerx_tests
+	url = ./beakerx_tests/
+[submodule "beakerx_widgets"]
+	path = beakerx_widgets
+	url = ./beakerx_widgets/
+[submodule "beakerx"]
+	path = beakerx
+	url = ./beakerx
