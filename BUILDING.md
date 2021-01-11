@@ -8,7 +8,9 @@ This short guide outlines the procedure for creating a local environment that su
 
 The code for this environment comes from multiple repositories and also a fork of table_display that will probably (at some point) be merged into master but this setup seems to work for now.
 
-## Checkout the required repositories
+NOTE: If you are building from scratch you can skip to step #3
+
+## 1. Checkout the required repositories
 This guide assumes you are in some local directory `$BEAKERX_HOME` and you're using Conda at `$CONDA_HOME`
 
 ```
@@ -21,7 +23,7 @@ git clone https://github.com/twosigma/beakerx_tests
 git clone https://github.com/martinRenou/beakerx_tabledisplay.git
 ```
 
-## Patch the beakerx environment spec
+## 2. Patch the beakerx environment spec
 ```diff
 diff --git a/beakerx-dist/configuration.yml b/beakerx-dist/configuration.yml
 index bb9d8297..0a131d0e 100644
@@ -41,45 +43,45 @@ index bb9d8297..0a131d0e 100644
 +  - jupyterlab=2
 ```
 
-## Create a local conda environment
+## 3. Create a local conda environment
 ```
 conda env create -f beakerx/beakerx-dist/configuration.yml
 conda activate beakerx_j2
 ```
 
-## Install base
+## 4. Install base
 ```
 cd beakerx_base
 pip install -r requirements.txt
 cd ..
 ```
 
-## Install kernel_base
+## 5. Install kernel_base
 ```
 cd beakerx_kernel_base
 ./gradlew install
 cd ..
 ```
 
-## Install Groovy kernel
+## 6. Install Groovy kernel
 ```
 cd beakerx_kernel_groovy
 ./gradlew install
 ```
 
-## Install the beakerx_kernel_groovy tool
+## 7. Install the beakerx_kernel_groovy tool
 ```
 cd groovy-dist
 pip install -r requirements.txt
 cd ../..
 ```
 
-## Install the kernel into Jupyter
+## 8. Install the kernel into Jupyter
 ```
 beakerx_kernel_groovy install
 ```
 
-## Install the local version of the widgets
+## 9. Install the local version of the widgets
 ```
 cd beakerx_widgets/beakerx_widgets
 pip install -e .
@@ -88,7 +90,7 @@ jupyter labextension install --no-build ../js
 
 N.B.: Using the `beakerx install --lab` command will install from NPM **NOT** from local 
 
-## Install the tabledisplay widget
+## 10. Install the tabledisplay widget
 ```
 cd beakerx_tabledisplay
 git checkout lab_2
@@ -98,7 +100,7 @@ jupyter labextension install --no-build ../js
 ```
 N.B.: Using the `beakerx install --lab` command will install from NPM **NOT** from local 
 
-## Build all lab components
+## 11. Build all lab components
 ```
 jupyter lab build
 ```
