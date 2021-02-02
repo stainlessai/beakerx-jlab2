@@ -7,9 +7,6 @@
 [submodule "beakerx_kernel_groovy"]
 	path = beakerx_kernel_groovy
 	url = https://github.com/twosigma/beakerx_kernel_groovy.git/
-[submodule "beakerx_tabledisplay"]
-	path = beakerx_tabledisplay
-	url = https://github.com/martinRenou/beakerx_tabledisplay.git/ 
 [submodule "beakerx_tests"]
 	path = beakerx_tests
 	url = https://github.com/twosigma/beakerx_tests.git/
