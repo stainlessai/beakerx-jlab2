@@ -17,3 +17,6 @@
 	path = beakerx
 	url = https://github.com/twosigma/beakerx.git/
 
+[submodule "beakerx_tabledisplay"]
+	path = beakerx_tabledisplay
+	url = https://github.com/twosigma/beakerx_tabledisplay
