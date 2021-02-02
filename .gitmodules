@@ -20,3 +20,7 @@
 [submodule "beakerx_tabledisplay"]
 	path = beakerx_tabledisplay
 	url = https://github.com/twosigma/beakerx_tabledisplay
+[submodule "martinRenou_tabledisplay"]
+	path = martinRenou_tabledisplay
+	url = https://github.com/martinRenou/beakerx_tabledisplay.git
+
