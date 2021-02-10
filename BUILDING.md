@@ -108,6 +108,7 @@ N.B.: Using the `beakerx install --lab` command will install from NPM **NOT** fr
 
 ## 11. Build all lab components
 ```
+beakerx install # installs server component and API at /beakerx
 jupyter lab build
 ```
 
