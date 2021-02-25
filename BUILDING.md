@@ -103,10 +103,17 @@ git checkout lab_2
 cd beakerx_tabledisplay 
 pip install -r requirements.txt
 jupyter labextension install --no-build ../js 
+```            
+
+## 11. Install autotranslation kernel
+```      
+cd beakerx_widgets/beakerx_widgets
+(pip install -r requirements.txt --verbose)
+beakerx_kernel_autotranslation install
 ```
 N.B.: Using the `beakerx install --lab` command will install from NPM **NOT** from local 
 
-## 11. Build all lab components
+## 12. Build all lab components
 ```
 beakerx install # installs server component and API at /beakerx
 jupyter lab build

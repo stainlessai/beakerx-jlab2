@@ -24,3 +24,6 @@
 	path = martinRenou_tabledisplay
 	url = https://github.com/martinRenou/beakerx_tabledisplay.git
 
+[submodule "beakerx_kernel_autotranslation"]
+	path = beakerx_kernel_autotranslation
+	url = https://github.com/twosigma/beakerx_kernel_autotranslation
